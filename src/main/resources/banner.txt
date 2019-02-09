@@ -1,0 +1,54 @@
+${AnsiColor.GREEN}
+
+
+          kkkkkkkk
+          k::::::k
+          k::::::k
+          k::::::k
+           k:::::k    kkkkkkk    eeeeeeeeeeee        eeeeeeeeeeee    ppppp   ppppppppp       eeeeeeeeeeee    rrrrr   rrrrrrrrr
+           k:::::k   k:::::k   ee::::::::::::ee    ee::::::::::::ee  p::::ppp:::::::::p    ee::::::::::::ee  r::::rrr:::::::::r
+           k:::::k  k:::::k   e::::::eeeee:::::ee e::::::eeeee:::::eep:::::::::::::::::p  e::::::eeeee:::::eer:::::::::::::::::r
+           k:::::k k:::::k   e::::::e     e:::::ee::::::e     e:::::epp::::::ppppp::::::pe::::::e     e:::::err::::::rrrrr::::::r
+           k::::::k:::::k    e:::::::eeeee::::::ee:::::::eeeee::::::e p:::::p     p:::::pe:::::::eeeee::::::e r:::::r     r:::::r
+           k:::::::::::k     e:::::::::::::::::e e:::::::::::::::::e  p:::::p     p:::::pe:::::::::::::::::e  r:::::r     rrrrrrr
+           k:::::::::::k     e::::::eeeeeeeeeee  e::::::eeeeeeeeeee   p:::::p     p:::::pe::::::eeeeeeeeeee   r:::::r
+           k::::::k:::::k    e:::::::e           e:::::::e            p:::::p    p::::::pe:::::::e            r:::::r
+          k::::::k k:::::k   e::::::::e          e::::::::e           p:::::ppppp:::::::pe::::::::e           r:::::r
+          k::::::k  k:::::k   e::::::::eeeeeeee   e::::::::eeeeeeee   p::::::::::::::::p  e::::::::eeeeeeee   r:::::r
+          k::::::k   k:::::k   ee:::::::::::::e    ee:::::::::::::e   p::::::::::::::pp    ee:::::::::::::e   r:::::r
+          kkkkkkkk    kkkkkkk    eeeeeeeeeeeeee      eeeeeeeeeeeeee   p::::::pppppppp        eeeeeeeeeeeeee   rrrrrrr
+                                                                      p:::::p
+                                                                      p:::::p
+                                                                     p:::::::p
+                                                                     p:::::::p
+                                                                     p:::::::p
+                                                                     ppppppppp
+
+
+${AnsiColor.CYAN}
+   SSSSSSSSSSSSSSS          tttt
+ SS:::::::::::::::S      ttt:::t
+S:::::SSSSSS::::::S      t:::::t
+S:::::S     SSSSSSS      t:::::t
+S:::::S            ttttttt:::::ttttttt       ooooooooooo   rrrrr   rrrrrrrrr     aaaaaaaaaaaaa      ggggggggg   ggggg    eeeeeeeeeeee
+S:::::S            t:::::::::::::::::t     oo:::::::::::oo r::::rrr:::::::::r    a::::::::::::a    g:::::::::ggg::::g  ee::::::::::::ee
+ S::::SSSS         t:::::::::::::::::t    o:::::::::::::::or:::::::::::::::::r   aaaaaaaaa:::::a  g:::::::::::::::::g e::::::eeeee:::::ee
+  SS::::::SSSSS    tttttt:::::::tttttt    o:::::ooooo:::::orr::::::rrrrr::::::r           a::::a g::::::ggggg::::::gge::::::e     e:::::e
+    SSS::::::::SS        t:::::t          o::::o     o::::o r:::::r     r:::::r    aaaaaaa:::::a g:::::g     g:::::g e:::::::eeeee::::::e
+       SSSSSS::::S       t:::::t          o::::o     o::::o r:::::r     rrrrrrr  aa::::::::::::a g:::::g     g:::::g e:::::::::::::::::e
+            S:::::S      t:::::t          o::::o     o::::o r:::::r             a::::aaaa::::::a g:::::g     g:::::g e::::::eeeeeeeeeee
+            S:::::S      t:::::t    tttttto::::o     o::::o r:::::r            a::::a    a:::::a g::::::g    g:::::g e:::::::e
+SSSSSSS     S:::::S      t::::::tttt:::::to:::::ooooo:::::o r:::::r            a::::a    a:::::a g:::::::ggggg:::::g e::::::::e
+S::::::SSSSSS:::::S      tt::::::::::::::to:::::::::::::::o r:::::r            a:::::aaaa::::::a  g::::::::::::::::g  e::::::::eeeeeeee
+S:::::::::::::::SS         tt:::::::::::tt oo:::::::::::oo  r:::::r             a::::::::::aa:::a  gg::::::::::::::g   ee:::::::::::::e
+ SSSSSSSSSSSSSSS             ttttttttttt     ooooooooooo    rrrrrrr              aaaaaaaaaa  aaaa    gggggggg::::::g     eeeeeeeeeeeeee
+                                                                                                             g:::::g
+                                                                                                 gggggg      g:::::g
+                                                                                                 g:::::gg   gg:::::g
+                                                                                                  g::::::ggg:::::::g
+                                                                                                   gg:::::::::::::g
+                                                                                                     ggg::::::ggg
+                                                                                                        gggggg
+${AnsiColor.BRIGHT_RED}
+Application Version: ${application.formatted-version}
+Spring Boot Version: ${spring-boot.formatted-version}
