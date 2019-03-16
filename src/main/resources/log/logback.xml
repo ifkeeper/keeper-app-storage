@@ -9,7 +9,7 @@
 	<!--<property name="CONSOLE_LOG_PATTERN" value="${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(-&#45;&#45;){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>-->
 
 	<!-- 日志格式化模板 ,输出样例如下： -->
-	<!-- 2018-09-23 18:05:23.147 INFO 4736 [http-nio-8080-exec-2] com.mingrn.keeper.model.UserInfo: UserInfo has been created... -->
+	<!-- 2018-09-23 18:05:23.147 INFO 4736 [http-nio-8080-exec-2] com.mingrn.itumate.model.UserInfo: UserInfo has been created... -->
 	<property name="FILE_LOG_PATTERN"
 			  value="%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
 
@@ -145,21 +145,21 @@
 	</appender>
 
 	<!-- 配置安全日志: 包路径, 这里主要针对安全相关模块都在该包路径下 -->
-	<!--<logger name="com.mingrn.keeper.security" level="DEBUG" additivity="false">
+	<!--<logger name="com.mingrn.itumate.security" level="DEBUG" additivity="false">
 		<appender-ref ref="SECURITY_FILE"/>
 	</logger>-->
 
 	<!-- 配置安全日志: 完整类名称路径, 这里主要特殊场景,涉及安全 但是不在安全包路径下 -->
-	<!--<logger name="com..mingrn.keeper.manager.UserManager" level="DEBUG" additivity="false">
+	<!--<logger name="com..mingrn.itumate.manager.UserManager" level="DEBUG" additivity="false">
 		<appender-ref ref="SECURITY_FILE"/>
 	</logger>-->
 
 	<!-- 配置启动日志：类完整路径 -->
-	<!-- <logger name="com.mingrn.keeper.storage.Application" level="DEBUG"
+	<!-- <logger name="com.mingrn.itumate.storage.Application" level="DEBUG"
 		additivity="false"> <appender-ref ref="START_FILE" /> </logger> -->
 
 	<!-- 配置启动日志：类完整路径 -->
-	<!--<logger name="com.mingrn.keeper.**.Application" level="DEBUG" additivity="false">
+	<!--<logger name="com.mingrn.itumate.**.Application" level="DEBUG" additivity="false">
 		<appender-ref ref="START_FILE"/>
 	</logger>-->
 
@@ -182,8 +182,8 @@
 	</root>
 
 	<!-- 指定项目中某个包,当有日志操作行为时的日志记录级别 -->
-	<!-- com.mingrn.keeper为根包,也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
-	<logger name="com.mingrn.keeper" level="DEBUG">
+	<!-- com.mingrn.itumate为根包,也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
+	<logger name="com.mingrn.itumate" level="DEBUG">
 		<appender-ref ref="DEBUG_FILE"/>
 	</logger>
 
