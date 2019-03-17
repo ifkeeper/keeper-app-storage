@@ -54,18 +54,21 @@ $ curl https://cdn.mivm.cn/www.mivm.cn/archives/filebrowser/filebrowser.service 
 
 - 杀死进程：`kill -9 $(pidof filebrowser)`
 
-如果你不知道配置服务端口，启动服务后可以使用如下命令进行查看：
+如果你不知道配置服务端口，启动服务后可以执行如下命令进行查看：
 
 ```
 $ netstat -anupt | grep filebrowser
+
+# 示例
+tcp6       0      0 :::39494                :::*                    LISTEN      10680/filebrowser  
 ```
 
 以上配置执行完成后即可访问 File Browser 存储服务，`启动服务` 后即可在浏览器中输入 `ip:<port>` 进行访问，如果你是直接执行初始化配置文件则端口
 为 `39494`。登录界面如下所示：
 
-[](./file-browser-login.png)
+[](file-browser-login.png)
 
-具体配置信息见：https://docs.filebrowser.xy
+具体相关配置信息可以参考官方文档：https://docs.filebrowser.xy
 
 # 项目配置
 
