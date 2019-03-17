@@ -66,7 +66,7 @@ tcp6       0      0 :::39494                :::*                    LISTEN      
 以上配置执行完成后即可访问 File Browser 存储服务，`启动服务` 后即可在浏览器中输入 `ip:<port>` 进行访问，如果你是直接执行初始化配置文件则端口
 为 `39494`。登录界面如下所示：
 
-[](file-browser-login.png)
+![](file-browser-login.png)
 
 具体相关配置信息可以参考官方文档：https://docs.filebrowser.xy
 
