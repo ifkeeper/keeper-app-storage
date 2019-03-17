@@ -19,6 +19,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Set;
 
+/**
+ * File Browser Http Client 工具类
+ *
+ * @author MinGRn <br > MinGRn97@gmail.com
+ * @date 2019-03-17 15:44
+ */
 final class FileBrowserHttpClientUtils {
 
     private FileBrowserHttpClientUtils() {
@@ -63,7 +69,7 @@ final class FileBrowserHttpClientUtils {
      * @return response is ok?
      */
     public static boolean postForEntityIsOK(final String url, final InputStreamEntity entity,
-                                            final HashMap<String, String> header, final RequestConfig config) {
+                                            final HashMap<String, String> header, final RequestConfig config) throws IOException {
 
         try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
 
@@ -72,9 +78,8 @@ final class FileBrowserHttpClientUtils {
 
             return (null != response && response.getStatusLine().getStatusCode() == HttpStatus.SC_OK);
         } catch (IOException e) {
-            LOGGER.error("HttpClientUtils#postForEntityIsOK request ex", e);
+            throw e;
         }
-        return false;
     }
 
     /**
@@ -88,19 +93,20 @@ final class FileBrowserHttpClientUtils {
      * @return response result
      */
     public static String executeForEntityIsStr(final RequestMethod method, final String url, final HttpEntity entity,
-                                               final HashMap<String, String> header, final RequestConfig config) {
-        try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
+                                               final HashMap<String, String> header, final RequestConfig config) throws IOException {
 
+        try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
             HttpUriRequest uriRequest = requestBuilder(method, url, entity, header, config);
             CloseableHttpResponse response = httpClient.execute(uriRequest);
 
             if (null != response && response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 return EntityUtils.toString(response.getEntity());
+            } else {
+                throw new IOException((null != response ? response.getEntity() : null) == null ? "未知请求错误" : EntityUtils.toString(response.getEntity()));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            throw e;
         }
-        return null;
     }
 
     /**

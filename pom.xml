@@ -14,41 +14,49 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <properties>
+        <itumate.mybatis-generator.version>0.0.1-SNAPSHOT</itumate.mybatis-generator.version>
+        <itumate.global-handler.version>0.0.1-SNAPSHOT</itumate.global-handler.version>
+        <itumate.commons-utils.version>0.0.1-SNAPSHOT</itumate.commons-utils.version>
+        <itumate.mybatis-core.version>0.0.1-SNAPSHOT</itumate.mybatis-core.version>
+        <itumate.base.version>0.0.1-SNAPSHOT</itumate.base.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>${parent.groupId}</groupId>
+            <artifactId>itumate-mybatis-generator</artifactId>
+            <version>${itumate.mybatis-generator.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${parent.groupId}</groupId>
             <artifactId>itumate-global-handler</artifactId>
-            <version>${parent.version}</version>
+            <version>${itumate.global-handler.version}</version>
         </dependency>
 
         <dependency>
             <groupId>${parent.groupId}</groupId>
             <artifactId>itumate-mybatis-core</artifactId>
-            <version>${parent.version}</version>
+            <version>${itumate.mybatis-core.version}</version>
         </dependency>
 
         <dependency>
             <groupId>${parent.groupId}</groupId>
             <artifactId>itumate-base</artifactId>
-            <version>${parent.version}</version>
+            <version>${itumate.base.version}</version>
         </dependency>
 
         <dependency>
             <groupId>${parent.groupId}</groupId>
             <artifactId>itumate-commons-utils</artifactId>
-            <version>${parent.version}</version>
+            <version>${itumate.commons-utils.version}</version>
         </dependency>
 
         <!--Eureka Client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.6</version>
         </dependency>
 
         <!--<dependency>
