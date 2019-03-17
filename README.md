@@ -17,7 +17,7 @@ $ curl -fsSL https://filebrowser.github.io/get.sh | bash
 $ wget -qO- https://filebrowser.github.io/get.sh | bash
 ```
 
-上诉脚本或命令执行完成后安装包文件存储在 `/usr/local/bin` 目录下：
+上诉脚本或命令执行完成后会将下载的安装包文件存储在 `/usr/local/bin` 目录下：
 
 ```
 $ ls /usr/local/bin/
@@ -34,13 +34,13 @@ filebrowser
 
 > 以上信息可以自行修改
 
-下载 File Browser 的 service 文件：
+继续下载 File Browser 的 service 文件：
 
 ```
 $ curl https://cdn.mivm.cn/www.mivm.cn/archives/filebrowser/filebrowser.service -o /lib/systemd/system/filebrowser.service
 ```
 
-命令执行完成后即可管理服务：
+管理 File Browser 服务：
 
 - 运行：`systemctl start filebrowser.service`
 
@@ -60,7 +60,8 @@ $ curl https://cdn.mivm.cn/www.mivm.cn/archives/filebrowser/filebrowser.service 
 $ netstat -anupt | grep filebrowser
 ```
 
-执行启动命令即可在浏览器中输入通过 ip:<port> 访问。上诉脚本默认执行端口号为 `39494`：
+以上配置执行完成后即可访问 File Browser 存储服务，`启动服务` 后即可在浏览器中输入 `ip:<port>` 进行访问，如果你是直接执行初始化配置文件则端口
+为 `39494`。登录界面如下所示：
 
 [](./file-browser-login.png)
 
@@ -85,7 +86,7 @@ file.browser.upload.path=/api/resources
 file.browser.file.show=/api/raw
 ```
 
-实际中只需要修改如下三个信息即可，api 无效配置
+实际中只需要修改如下三个信息即可，api 无需任何修改
 
 ```
 file.browser.base.path=
