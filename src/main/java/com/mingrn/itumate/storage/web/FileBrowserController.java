@@ -67,7 +67,7 @@ public class FileBrowserController {
 
     @PostMapping(value = "/uploadForMultipart", consumes = "multipart/*", headers = "Content-Type=multipart/form-data")
     @ApiOperation(value = "文件上传", notes = "MultipartFile 请求文件上传")
-    public Result uploadForMultipart(@ApiParam(value = "上传文件", required = true) MultipartFile multipartFile) throws IOException {
+    public Result uploadForMultipart(@ApiParam(value = "上传文件") @RequestParam(name = "multipartFile") MultipartFile multipartFile) throws IOException {
         JSONObject result = FileBrowserUtil.uploadFile(browserBasePath + browserUploadPath, FileTypesEnum.IMG, TokenAuth, multipartFile);
         return ResponseMsgUtil.success(result);
     }

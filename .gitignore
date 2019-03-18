@@ -20,3 +20,9 @@ atlassian-ide-plugin.xml
 
 # package lock
 package-lock.json
+
+# log
+/log/
+
+# maven
+/target/
