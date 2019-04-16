@@ -48,7 +48,7 @@ final class FileBrowserHttpClientUtils {
     private static RequestConfig DEFAULT_CONFIG;
 
     static {
-        SOCKET_TIMEOUT = 10000;
+        SOCKET_TIMEOUT = 60000;
         CONNECT_TIMEOUT = 10000;
         CONNECTION_REQUEST_TIMEOUT = 1000;
         DEFAULT_CONFIG = RequestConfig.custom()

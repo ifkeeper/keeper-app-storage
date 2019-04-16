@@ -71,4 +71,16 @@ public class FileBrowserController {
         JSONObject result = FileBrowserUtil.uploadFile(browserBasePath + browserUploadPath, FileTypesEnum.IMG, TokenAuth, multipartFile);
         return ResponseMsgUtil.success(result);
     }
+
+    /**
+     * 获取文件上传进度
+     *
+     * @param request
+     * @return
+     */
+    @GetMapping("/progress")
+    @ApiOperation(value = "文件上传进度", notes = "MultipartFile 请求文件上传进度")
+    public Result getUploadProgress(HttpServletRequest request) {
+        return ResponseMsgUtil.success(request.getSession().getAttribute("mediaUploadProgress"));
+    }
 }
