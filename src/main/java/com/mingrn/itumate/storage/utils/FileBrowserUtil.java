@@ -2,7 +2,7 @@ package com.mingrn.itumate.storage.utils;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.mingrn.itumate.commons.utils.key.GeneratorIDFactory;
+import com.mingrn.itumate.commons.utils.secure.GeneratorIDFactory;
 import com.mingrn.itumate.commons.utils.object.ObjectUtils;
 import com.mingrn.itumate.storage.enums.FileTypesEnum;
 import org.apache.http.entity.InputStreamEntity;
