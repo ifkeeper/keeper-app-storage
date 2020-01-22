@@ -24,31 +24,31 @@
 
     <dependencies>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.mingrn.itumate</groupId>
             <artifactId>itumate-mybatis-generator</artifactId>
             <version>${itumate.mybatis-generator.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.mingrn.itumate</groupId>
             <artifactId>itumate-global-handler</artifactId>
             <version>${itumate.global-handler.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.mingrn.itumate</groupId>
             <artifactId>itumate-mybatis-core</artifactId>
             <version>${itumate.mybatis-core.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.mingrn.itumate</groupId>
             <artifactId>itumate-base</artifactId>
             <version>${itumate.base.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.mingrn.itumate</groupId>
             <artifactId>itumate-commons-utils</artifactId>
             <version>${itumate.commons-utils.version}</version>
         </dependency>
